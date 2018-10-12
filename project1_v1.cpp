@@ -17,7 +17,7 @@ int main()
     
     /****************Open File*****************/
     fstream file,outFile;
-	file.open("matrix.data", ios::in);
+	file.open("matrix_1.data", ios::in);
 
 	if (file.is_open()) { // If file has correctly opened...
 		cout << "File correctly opened" << endl;
@@ -67,7 +67,7 @@ int SIZE=col_index.size()-1;
 col_index.pop();
 row_index.pop();
 
-outFile.open("final.peak", ios::out);
+outFile.open("Afinal.peak", ios::out);
 outFile << SIZE <<endl;
 
 for(int MM=0;MM<SIZE;MM++)
